@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Über uns</li>
+        </ul>
+    </nav>
+    <h1>Willkommen in unserer Webseite</h1>
+    <hr>
+</header>
+<div class="container">
+    <!--form id's changed to contact-->
+    <contact id="contact" class="contact">
+        <form id="form">
+            <h2>Feel free to contact us :)</h2>
+            <div>
+                <select name="formofadress" id="gender">
+                    <option value="Sir">Sir</option>
+                    <option value="Mam">Mam</option>
+                    <option value="Els">Else</option>
+                </select>
+            </div>
+            <div class="contact-control">
+                <label for="firstname">First name</label>
+                <input required type="text" minlength="3" maxlength="15" class="form-control" id="firstname" placeholder="Enter your first name"/>
+                <small>Error message</small>
+            </div>
+            <div class="contact-control">
+                <label for="lastname">Last name</label>
+                <input required type="text" minlength="3" maxlength="15" class="form-control" id="lastname" placeholder="Enter your last name"/>
+                <small>Error message</small>
+            </div>
+            <div class="contact-control">
+                <label for="birthday">Birthday</label>
+                <input required type="date" class="form-control" id="birthday" name="birthday">
+                <!--<input type="submit">-->
+            </div>
+            <div class="contact-control">
+                <label for="email">Email</label>
+                <input required type="email" class="form-control" id="email" placeholder="Enter email"/>
+                <small>Error message</small>
+            </div>
+            <div class="contact-control">
+                <label for="phonenumber">Phone number</label>
+                <input required type="tel" class="form-control" id="phonenumber" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+                       placeholder="079 123 45 67"/>
+                <small>Error message</small>
+            </div>
+            <div class="contact-control">
+                <label for="password">Password</label>
+                <input required type="password" class="form-control" minlength="6" maxlength="30" id="password" placeholder="Enter password"/>
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </contact>
+</div>
+
+
+<script src="../validation.js"></script>
+<footer>
+    <p>Copyright: Fabienne Secci, Simon Martinez</p>
+    <!--<p><a href="mailto:hege@example.com">hege@example.com</a></p>-->
+
+
+</footer>
+</body>
+</html>
